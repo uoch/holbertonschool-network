@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Get the list of listening sockets and corresponding processes
+netstat -ln -p
