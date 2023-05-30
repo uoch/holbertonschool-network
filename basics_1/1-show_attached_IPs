@@ -1,0 +1,7 @@
+#!/bin/bash
+# Retrieve all active IPv4 IPs on the machine
+ips=$(ip -4 -o addr show | awk '{print $4}' | cut -d '/' -f 1)
+
+# Display the active IPv4 IPs
+echo "Active IPv4 IPs:"
+echo "$ips"
